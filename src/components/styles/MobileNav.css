@@ -1,0 +1,92 @@
+
+.mobileNav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: start;
+    /* border: 5px solid rgb(255, 0, 208); */
+    height: 100vh;
+}
+@media (min-width:900px) {
+    .mobileNav {
+        display: none;
+    }
+}
+
+.nav {
+    padding: .5em 1em .5em 0;
+    border: none;
+}
+
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 0 .5em;
+}
+.hamburger:hover .bar {
+    background: rgba(255, 255, 255, .4)
+}
+
+
+.bar {
+    background: white;
+    width: 30px;
+    height: 4px;
+    border-radius: 1px;
+    transition: 200ms ease;
+}
+
+@media (max-width: 900px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(11px)  rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+        
+    }
+}
+
+
+.mobileSideBar {
+    padding: 1rem 0;
+    height: 100%;
+    color: #fff;
+    border: none;
+
+    animation-name: rollin;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+}
+@keyframes rollin {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 30%;
+        min-width: 265px;
+    }
+}
+@media (min-width:430px) {
+    @keyframes rollin {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 30%;
+            min-width: 300px;
+        }
+    }
+}
+.mobileSideBarOff {
+    position: fixed;
+    left: -100%;
+}

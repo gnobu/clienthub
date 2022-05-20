@@ -1,0 +1,19 @@
+
+
+.body {
+    height: 100vh;
+    /* border: 5px solid rgb(149, 75, 149); */
+}
+
+.f-row {
+    display: flex;
+    /* border: 2px solid green; */
+    border: none;
+    gap: 1rem;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
