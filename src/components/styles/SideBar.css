@@ -1,15 +1,4 @@
 
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.container {
-    width: 80%;
-    /* border: 2px solid red; */
-    padding: .5em 0;
-}
 
 .width-100 {
     width: 100%;

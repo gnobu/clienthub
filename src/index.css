@@ -23,6 +23,19 @@ body {
 
 
 
+/* General Classes */
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  border: 2px solid red;
+  padding: .5em 0;
+}
 
 .marg-b-5 {
   margin-bottom: 5px;
@@ -36,10 +49,11 @@ body {
   width: 100%;
 }
 
-
-
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* End of General Classes */
+
+
+
