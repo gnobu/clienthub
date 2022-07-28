@@ -35,7 +35,7 @@
     width: 30px;
     height: 4px;
     border-radius: 1px;
-    transition: 200ms ease;
+    transition: 400ms ease;
 }
 
 @media (max-width: 900px) {
@@ -61,10 +61,12 @@
     height: 100%;
     color: #fff;
     border: none;
+    overflow: hidden;
 
     animation-name: rollin;
-    animation-duration: 200ms;
+    animation-duration: 400ms;
     animation-fill-mode: forwards;
+    transition: 400ms;
 }
 @keyframes rollin {
     0% {
